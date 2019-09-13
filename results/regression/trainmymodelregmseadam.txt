@@ -1,0 +1,54 @@
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=1, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Adam loss, Adam optimizer, lr = 0.001
+[1,     1] loss: 1.978
+[1,   506] loss: 0.270
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=1, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Adam loss, Adam optimizer, lr = 0.001
+[1,     1] loss: 0.385
+[1,   506] loss: 0.240
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=1, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Adam loss, Adam optimizer, lr = 0.001
+[1,     1] loss: 1.124
+[1,   506] loss: 0.372

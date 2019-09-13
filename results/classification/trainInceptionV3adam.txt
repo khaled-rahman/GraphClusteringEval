@@ -1,0 +1,501 @@
+training: 13195 , validation: 16965
+1885
+Training and Testing InceptionV3
+1.2.0
+2 torch.Size([64, 3, 299, 299]) torch.Size([64, 29])
+2 torch.Size([64, 3, 299, 299]) torch.Size([64, 29])
+Inception3(
+  (Conv2d_1a_3x3): BasicConv2d(
+    (conv): Conv2d(3, 32, kernel_size=(3, 3), stride=(2, 2), bias=False)
+    (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (Conv2d_2a_3x3): BasicConv2d(
+    (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), bias=False)
+    (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (Conv2d_2b_3x3): BasicConv2d(
+    (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (Conv2d_3b_1x1): BasicConv2d(
+    (conv): Conv2d(64, 80, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (bn): BatchNorm2d(80, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (Conv2d_4a_3x3): BasicConv2d(
+    (conv): Conv2d(80, 192, kernel_size=(3, 3), stride=(1, 1), bias=False)
+    (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (Mixed_5b): InceptionA(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_1): BasicConv2d(
+      (conv): Conv2d(192, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(48, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_2): BasicConv2d(
+      (conv): Conv2d(48, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(192, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3): BasicConv2d(
+      (conv): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(192, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(32, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_5c): InceptionA(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_1): BasicConv2d(
+      (conv): Conv2d(256, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(48, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_2): BasicConv2d(
+      (conv): Conv2d(48, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3): BasicConv2d(
+      (conv): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_5d): InceptionA(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(288, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_1): BasicConv2d(
+      (conv): Conv2d(288, 48, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(48, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch5x5_2): BasicConv2d(
+      (conv): Conv2d(48, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(288, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3): BasicConv2d(
+      (conv): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(288, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_6a): InceptionB(
+    (branch3x3): BasicConv2d(
+      (conv): Conv2d(288, 384, kernel_size=(3, 3), stride=(2, 2), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(288, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(64, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(64, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3): BasicConv2d(
+      (conv): Conv2d(96, 96, kernel_size=(3, 3), stride=(2, 2), bias=False)
+      (bn): BatchNorm2d(96, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_6b): InceptionC(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_1): BasicConv2d(
+      (conv): Conv2d(768, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_2): BasicConv2d(
+      (conv): Conv2d(128, 128, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_3): BasicConv2d(
+      (conv): Conv2d(128, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_1): BasicConv2d(
+      (conv): Conv2d(768, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_2): BasicConv2d(
+      (conv): Conv2d(128, 128, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_3): BasicConv2d(
+      (conv): Conv2d(128, 128, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_4): BasicConv2d(
+      (conv): Conv2d(128, 128, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_5): BasicConv2d(
+      (conv): Conv2d(128, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_6c): InceptionC(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_1): BasicConv2d(
+      (conv): Conv2d(768, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_2): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_3): BasicConv2d(
+      (conv): Conv2d(160, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_1): BasicConv2d(
+      (conv): Conv2d(768, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_2): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_3): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_4): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_5): BasicConv2d(
+      (conv): Conv2d(160, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_6d): InceptionC(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_1): BasicConv2d(
+      (conv): Conv2d(768, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_2): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_3): BasicConv2d(
+      (conv): Conv2d(160, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_1): BasicConv2d(
+      (conv): Conv2d(768, 160, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_2): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_3): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_4): BasicConv2d(
+      (conv): Conv2d(160, 160, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(160, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_5): BasicConv2d(
+      (conv): Conv2d(160, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_6e): InceptionC(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_2): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7_3): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_2): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_3): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_4): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7dbl_5): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (AuxLogits): InceptionAux(
+    (conv0): BasicConv2d(
+      (conv): Conv2d(768, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(128, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (conv1): BasicConv2d(
+      (conv): Conv2d(128, 768, kernel_size=(5, 5), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(768, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (fc): Linear(in_features=768, out_features=29, bias=True)
+  )
+  (Mixed_7a): InceptionD(
+    (branch3x3_1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_2): BasicConv2d(
+      (conv): Conv2d(192, 320, kernel_size=(3, 3), stride=(2, 2), bias=False)
+      (bn): BatchNorm2d(320, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7x3_1): BasicConv2d(
+      (conv): Conv2d(768, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7x3_2): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(1, 7), stride=(1, 1), padding=(0, 3), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7x3_3): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(7, 1), stride=(1, 1), padding=(3, 0), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch7x7x3_4): BasicConv2d(
+      (conv): Conv2d(192, 192, kernel_size=(3, 3), stride=(2, 2), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_7b): InceptionE(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(1280, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(320, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_1): BasicConv2d(
+      (conv): Conv2d(1280, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_2a): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_2b): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(1280, 448, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(448, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(448, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3a): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3b): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(1280, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (Mixed_7c): InceptionE(
+    (branch1x1): BasicConv2d(
+      (conv): Conv2d(2048, 320, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(320, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_1): BasicConv2d(
+      (conv): Conv2d(2048, 384, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_2a): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3_2b): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_1): BasicConv2d(
+      (conv): Conv2d(2048, 448, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(448, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_2): BasicConv2d(
+      (conv): Conv2d(448, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3a): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch3x3dbl_3b): BasicConv2d(
+      (conv): Conv2d(384, 384, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0), bias=False)
+      (bn): BatchNorm2d(384, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (branch_pool): BasicConv2d(
+      (conv): Conv2d(2048, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn): BatchNorm2d(192, eps=0.001, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (fc): Linear(in_features=2048, out_features=29, bias=True)
+)
+292
+torch.Size([32, 3, 3, 3])
+Inception net adam optimizer lr = 0.001
+[1,     1] loss: 0.953, total correct: 1
+[2,     1] loss: 0.129, total correct: 31
+[3,     1] loss: 0.101, total correct: 36
+[4,     1] loss: 0.095, total correct: 37
+[5,     1] loss: 0.084, total correct: 41
+[6,     1] loss: 0.084, total correct: 39
+[7,     1] loss: 0.081, total correct: 42
+[8,     1] loss: 0.080, total correct: 41
+[9,     1] loss: 0.073, total correct: 44
+[10,     1] loss: 0.073, total correct: 46
+[11,     1] loss: 0.088, total correct: 39
+[12,     1] loss: 0.075, total correct: 46
+[13,     1] loss: 0.070, total correct: 46
+[14,     1] loss: 0.075, total correct: 45
+[15,     1] loss: 0.072, total correct: 42
+[16,     1] loss: 0.069, total correct: 45
+[17,     1] loss: 0.066, total correct: 45
+[18,     1] loss: 0.073, total correct: 42
+[19,     1] loss: 0.071, total correct: 43
+[20,     1] loss: 0.075, total correct: 44
+[21,     1] loss: 0.079, total correct: 41
+[22,     1] loss: 0.067, total correct: 44
+[23,     1] loss: 0.067, total correct: 46
+[24,     1] loss: 0.071, total correct: 45
+[25,     1] loss: 0.069, total correct: 46
+[26,     1] loss: 0.077, total correct: 46
+[27,     1] loss: 0.064, total correct: 48
+[28,     1] loss: 0.069, total correct: 45
+[29,     1] loss: 0.068, total correct: 44
+[30,     1] loss: 0.064, total correct: 46
+[31,     1] loss: 0.070, total correct: 46
+[32,     1] loss: 0.065, total correct: 50
+[33,     1] loss: 0.078, total correct: 39
+[34,     1] loss: 0.075, total correct: 44
+[35,     1] loss: 0.055, total correct: 52
+[36,     1] loss: 0.077, total correct: 39
+[37,     1] loss: 0.078, total correct: 39
+[38,     1] loss: 0.072, total correct: 45
+[39,     1] loss: 0.071, total correct: 44
+[40,     1] loss: 0.072, total correct: 44
+[41,     1] loss: 0.081, total correct: 40
+[42,     1] loss: 0.069, total correct: 49
+[43,     1] loss: 0.069, total correct: 46
+[44,     1] loss: 0.075, total correct: 41
+[45,     1] loss: 0.064, total correct: 45
+[46,     1] loss: 0.072, total correct: 42
+[47,     1] loss: 0.055, total correct: 49
+[48,     1] loss: 0.084, total correct: 35
+[49,     1] loss: 0.083, total correct: 38
+[50,     1] loss: 0.052, total correct: 48
+Training time: 1930m 3s
+training loss [0.1723513725173058, 0.11208189220504695, 0.09806270902400127, 0.09187301103892517, 0.08745605932756674, 0.08430797835635447, 0.08276477088876544, 0.08037035343700523, 0.07958534990667519, 0.07846294666154738, 0.0770633092824212, 0.0768780248953523, 0.07643064840862042, 0.07583155609517418, 0.07504680467722757, 0.07472144501454936, 0.07376479234453773, 0.07339686126140954, 0.07304191884900513, 0.07282450677408622, 0.07218800884065363, 0.07201318706266475, 0.07161045715107091, 0.07205730508175752, 0.07156664483482755, 0.07179867473706095, 0.07156552743808368, 0.07105242781856705, 0.0710252878960898, 0.07116645192071316, 0.07119062170462528, 0.07077713631562763, 0.07042613269740522, 0.07037162928489563, 0.07029725515047879, 0.07024196279461935, 0.07007772133644624, 0.07000111079290049, 0.06970287679855725, 0.07009277316825385, 0.06983959909088333, 0.06983114689070784, 0.06977612526864634, 0.069879843623716, 0.06913673718036104, 0.06924996296413637, 0.06950161196965714, 0.06892681187508712, 0.0693064956562476, 0.0689300999842383]
+validation loss: [0.09156361004533023, 0.07492338790222676, 0.06790760892969035, 0.06434817684840985, 0.062159004692397574, 0.06062156109853607, 0.060386105885660776, 0.057729483052208236, 0.057804241735822534, 0.05626087191905673, 0.055698886654245855, 0.0568569389618445, 0.05634383365104769, 0.055784500744922486, 0.055023144187580225, 0.05552203460866352, 0.053816401517932023, 0.05406004174392262, 0.055277370406323474, 0.05393988028223572, 0.05460278103404217, 0.053784308571388294, 0.05315765033631043, 0.0538812352349781, 0.052962188842781095, 0.05320319111591795, 0.05342610367119317, 0.05291925028264326, 0.054489864567161636, 0.05305890400295912, 0.05319768387803496, 0.05302223351215907, 0.054266859046410654, 0.05337660685196563, 0.053646229353555286, 0.052737373211676514, 0.052669109396581835, 0.053247153876690455, 0.05308662118504199, 0.053138806664223485, 0.05335863737900985, 0.05262355839858738, 0.052270441511508656, 0.052799234324073685, 0.0526125357050192, 0.05245432250874589, 0.05255433355567053, 0.054656418124767854, 0.05440894327171107, 0.05293134466941277]
+testing loss: [0.05535082530524879]
+training accuracy: [0.33687002652519893, 0.5437665782493368, 0.6030314513073134, 0.6222811671087534, 0.6388025767336112, 0.6483516483516484, 0.6502463054187192, 0.6606290261462675, 0.6648730579765062, 0.6687381583933308, 0.670935960591133, 0.674118984463812, 0.6696475937855249, 0.6761652140962485, 0.6782872300113679, 0.6799545282303903, 0.6866995073891625, 0.6845774914740432, 0.6873057976506253, 0.6841985600606291, 0.6816218264494126, 0.6909435392194013, 0.6922319060250095, 0.6857900719969685, 0.6913224706328155, 0.6899583175445244, 0.6904130352406215, 0.6891246684350133, 0.6890488821523304, 0.6872300113679424, 0.687457370215991, 0.6886699507389162, 0.6899583175445244, 0.69064039408867, 0.6920803334596438, 0.6918529746115953, 0.6913982569154983, 0.6928381962864721, 0.6932171276998863, 0.6926866237211065, 0.6934444865479348, 0.6912466843501326, 0.6876089427813565, 0.6891246684350133, 0.6997347480106101, 0.6939749905267146, 0.6910193255020841, 0.6923076923076923, 0.6921561197423266, 0.694732853353543]
+validation accuracy: [0.5448275862068965, 0.6119363395225464, 0.6387267904509284, 0.6527851458885942, 0.6610079575596817, 0.6578249336870027, 0.6572944297082228, 0.6793103448275862, 0.6702917771883289, 0.6901856763925729, 0.6793103448275862, 0.6641909814323608, 0.6660477453580902, 0.6819628647214854, 0.6819628647214854, 0.6840848806366048, 0.6862068965517242, 0.689920424403183, 0.6782493368700265, 0.6888594164456233, 0.6843501326259946, 0.6819628647214854, 0.6880636604774536, 0.6785145888594164, 0.6928381962864721, 0.6962864721485411, 0.6915119363395226, 0.6923076923076923, 0.683289124668435, 0.6891246684350133, 0.6912466843501326, 0.6816976127320955, 0.6904509283819629, 0.693368700265252, 0.6938992042440318, 0.6912466843501326, 0.6928381962864721, 0.7, 0.6883289124668435, 0.693368700265252, 0.6771883289124668, 0.6896551724137931, 0.686472148541114, 0.6917771883289124, 0.6954907161803714, 0.6941644562334217, 0.6973474801061008, 0.6771883289124668, 0.6745358090185677, 0.6888594164456233]
+testing accuracy: [0.6954907161803714]
+training fbeta: [0.3390609390609391, 0.546322642874367, 0.6055875159323435, 0.6244720796444934, 0.6420889455372214, 0.6512728650659685, 0.6517069137758793, 0.6639153949498777, 0.6677942746908264, 0.671294223018361, 0.6734920252161631, 0.6770402011781321, 0.6718385063212649, 0.6787212787212786, 0.680843294636398, 0.6817802886768405, 0.6881601157463227, 0.6874987081883633, 0.6898618622756554, 0.6867546246856591, 0.6845430431637328, 0.6931344517551413, 0.6944228185607495, 0.6883461366219986, 0.6946088394364256, 0.6917840779909746, 0.6929690998656516, 0.6924110372386234, 0.6916049467773605, 0.6897860759929725, 0.689648282751731, 0.6912260153639463, 0.6925143821695545, 0.6924661545351201, 0.6950015501739639, 0.6947741913259154, 0.6943194736298184, 0.6953942609115022, 0.6965034965034965, 0.6952426883461366, 0.696730855351545, 0.6938027489751627, 0.6905301594956768, 0.6905852767921734, 0.7022908126356402, 0.6968962072410347, 0.6935753901271142, 0.6948637569327224, 0.6943470322780667, 0.6976540700678632]
+validation fbeta: [0.545595902314095, 0.6128967346565445, 0.639879264611726, 0.6539376200493918, 0.6620506722765938, 0.6588676484039148, 0.6582548248422209, 0.6805725784322694, 0.6714716912100979, 0.6912009512485138, 0.6804353791274124, 0.6651788164273301, 0.6669807006311168, 0.6829506997164547, 0.6829781395774261, 0.6851824750754596, 0.6871398518247507, 0.6910180188420378, 0.6792646117259673, 0.6899570108844781, 0.6854477270648496, 0.6831702186042258, 0.6892710143601939, 0.6796396231592426, 0.6940181103082411, 0.6972194274215677, 0.6924997713344919, 0.6934052867465471, 0.6843318393853471, 0.6902222628738681, 0.692454038232873, 0.6827128875880363, 0.6913838836549895, 0.6945486142870209, 0.6950791182658007, 0.692536357815787, 0.6940181103082411, 0.7011799140217689, 0.6894265069056984, 0.6944937345650781, 0.678313363212293, 0.6905332479648769, 0.6875697429799689, 0.6928747827677674, 0.6965334308972835, 0.6953169303942194, 0.6985822738498124, 0.6782036037684076, 0.6754413244306229, 0.690011890606421]
+testing fbeta: [0.7063751943656819]
+True label: [3, 14, 2, 2, 5, 5, 2, 2, 4, 2, 15, 5, 5, 9, 2, 9, 17, 3, 3, 9, 9, 5, 15, 2, 9, 16, 13, 5, 17, 5, 9, 9, 9, 2, 4, 14, 3, 5, 17, 14, 14, 14, 14, 14, 3, 14, 16, 9, 9, 4, 2, 14, 16, 2, 3, 15, 3, 5, 17, 5]
+Pred_label: [4, 20, 0, 0, 9, 9, 0, 0, 9, 0, 9, 0, 15, 9, 0, 9, 20, 0, 4, 9, 9, 9, 20, 15, 9, 20, 9, 20, 20, 9, 2, 9, 9, 0, 9, 9, 11, 9, 20, 20, 20, 25, 9, 9, 9, 9, 9, 9, 9, 9, 0, 9, 20, 28, 8, 20, 0, 20, 20, 20]
+real loss [0.0]
+real accuracy: [0.15]
+real f1score: [0.15]
+real truth: [tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 1.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.float64)]
+real pred: [tensor([[ -7.4808, -16.7103,  -3.2136,  ...,  -6.3199,  -9.9416,  -8.9499],
+        [ -9.6966, -17.0806,  -9.2930,  ...,  -5.9405,  -9.7756,  -5.1970],
+        [ -4.1667, -24.1074,  -9.7762,  ...,  -4.3630,  -7.8982,  -5.4939],
+        ...,
+        [ -7.5674, -23.1358,  -7.8652,  ...,  -6.6734,  -9.7249,  -8.4167],
+        [ -7.5782, -24.4247, -10.8110,  ...,  -6.1905, -11.8377,  -7.4075],
+        [ -3.4775, -21.2352, -11.1333,  ...,  -5.6868,  -9.0001,  -8.0718]],
+       dtype=torch.float64)]

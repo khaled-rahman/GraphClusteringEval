@@ -1,0 +1,404 @@
+training: 6090 , validation: 8120
+2030
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.725, total correct: 0
+[1,  1201] loss: 0.195, total correct: 1554
+training: 7786 , validation: 10381
+2596
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.712, total correct: 0
+training: 7986 , validation: 10648
+2663
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.727, total correct: 0
+training: 9387 , validation: 12069
+1341
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.695, total correct: 0
+[1,   506] loss: 0.275, total correct: 434
+[1,  1011] loss: 0.206, total correct: 1239
+[1,  1516] loss: 0.175, total correct: 2170
+[1,  2021] loss: 0.157, total correct: 3178
+[2,     1] loss: 0.091, total correct: 3
+[2,   506] loss: 0.085, total correct: 1429
+[2,  1011] loss: 0.083, total correct: 2851
+[2,  1516] loss: 0.081, total correct: 4286
+[2,  2021] loss: 0.080, total correct: 5743
+[3,     1] loss: 0.042, total correct: 4
+[3,   506] loss: 0.066, total correct: 1687
+[3,  1011] loss: 0.066, total correct: 3320
+[3,  1516] loss: 0.065, total correct: 4962
+[3,  2021] loss: 0.065, total correct: 6637
+[4,     1] loss: 0.046, total correct: 4
+[4,   506] loss: 0.057, total correct: 1789
+[4,  1011] loss: 0.056, total correct: 3597
+[4,  1516] loss: 0.056, total correct: 5367
+[4,  2021] loss: 0.055, total correct: 7143
+[5,     1] loss: 0.051, total correct: 4
+[5,   506] loss: 0.050, total correct: 1886
+[5,  1011] loss: 0.050, total correct: 3757
+[5,  1516] loss: 0.049, total correct: 5637
+[5,  2021] loss: 0.049, total correct: 7524
+[6,     1] loss: 0.032, total correct: 4
+[6,   506] loss: 0.045, total correct: 1934
+[6,  1011] loss: 0.044, total correct: 3856
+[6,  1516] loss: 0.044, total correct: 5776
+[6,  2021] loss: 0.044, total correct: 7690
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.690, total correct: 1
+[1,   506] loss: 0.283, total correct: 2618
+[2,     1] loss: 0.129, total correct: 9
+[2,   506] loss: 0.106, total correct: 5536
+[3,     1] loss: 0.083, total correct: 14
+[3,   506] loss: 0.081, total correct: 6463
+[4,     1] loss: 0.074, total correct: 16
+[4,   506] loss: 0.069, total correct: 6965
+[5,     1] loss: 0.054, total correct: 14
+[5,   506] loss: 0.061, total correct: 7332
+[6,     1] loss: 0.059, total correct: 13
+[6,   506] loss: 0.055, total correct: 7573
+[7,     1] loss: 0.044, total correct: 16
+[7,   506] loss: 0.051, total correct: 7702
+[8,     1] loss: 0.059, total correct: 15
+[8,   506] loss: 0.047, total correct: 7830
+[9,     1] loss: 0.041, total correct: 16
+[9,   506] loss: 0.044, total correct: 7916
+[10,     1] loss: 0.037, total correct: 15
+[10,   506] loss: 0.041, total correct: 7947
+[11,     1] loss: 0.037, total correct: 16
+[11,   506] loss: 0.038, total correct: 8008
+[12,     1] loss: 0.032, total correct: 16
+[12,   506] loss: 0.036, total correct: 8036
+[13,     1] loss: 0.032, total correct: 16
+[13,   506] loss: 0.034, total correct: 8046
+[14,     1] loss: 0.032, total correct: 16
+[14,   506] loss: 0.032, total correct: 8060
+[15,     1] loss: 0.038, total correct: 15
+[15,   506] loss: 0.031, total correct: 8070
+[16,     1] loss: 0.031, total correct: 16
+[16,   506] loss: 0.029, total correct: 8078
+[17,     1] loss: 0.029, total correct: 16
+[17,   506] loss: 0.028, total correct: 8080
+[18,     1] loss: 0.026, total correct: 16
+[18,   506] loss: 0.027, total correct: 8076
+[19,     1] loss: 0.025, total correct: 16
+[19,   506] loss: 0.026, total correct: 8081
+[20,     1] loss: 0.026, total correct: 16
+[20,   506] loss: 0.024, total correct: 8088
+[21,     1] loss: 0.028, total correct: 16
+[21,   506] loss: 0.023, total correct: 8090
+[22,     1] loss: 0.019, total correct: 16
+[22,   506] loss: 0.022, total correct: 8094
+[23,     1] loss: 0.023, total correct: 16
+[23,   506] loss: 0.021, total correct: 8092
+[24,     1] loss: 0.019, total correct: 16
+[24,   506] loss: 0.020, total correct: 8094
+[25,     1] loss: 0.018, total correct: 16
+[25,   506] loss: 0.020, total correct: 8095
+[26,     1] loss: 0.017, total correct: 16
+[26,   506] loss: 0.019, total correct: 8094
+[27,     1] loss: 0.024, total correct: 16
+[27,   506] loss: 0.018, total correct: 8095
+[28,     1] loss: 0.017, total correct: 16
+[28,   506] loss: 0.018, total correct: 8094
+[29,     1] loss: 0.020, total correct: 16
+[29,   506] loss: 0.017, total correct: 8095
+[30,     1] loss: 0.013, total correct: 16
+[30,   506] loss: 0.017, total correct: 8095
+[31,     1] loss: 0.016, total correct: 16
+[31,   506] loss: 0.016, total correct: 8096
+[32,     1] loss: 0.018, total correct: 16
+[32,   506] loss: 0.015, total correct: 8095
+[33,     1] loss: 0.015, total correct: 16
+[33,   506] loss: 0.015, total correct: 8096
+[34,     1] loss: 0.013, total correct: 16
+[34,   506] loss: 0.014, total correct: 8095
+[35,     1] loss: 0.014, total correct: 16
+[35,   506] loss: 0.014, total correct: 8096
+[36,     1] loss: 0.012, total correct: 16
+[36,   506] loss: 0.014, total correct: 8095
+[37,     1] loss: 0.015, total correct: 16
+[37,   506] loss: 0.013, total correct: 8096
+[38,     1] loss: 0.012, total correct: 16
+[38,   506] loss: 0.013, total correct: 8096
+[39,     1] loss: 0.016, total correct: 16
+[39,   506] loss: 0.012, total correct: 8096
+[40,     1] loss: 0.012, total correct: 16
+[40,   506] loss: 0.012, total correct: 8096
+[41,     1] loss: 0.012, total correct: 16
+[41,   506] loss: 0.012, total correct: 8095
+[42,     1] loss: 0.014, total correct: 16
+[42,   506] loss: 0.012, total correct: 8096
+[43,     1] loss: 0.011, total correct: 16
+[43,   506] loss: 0.011, total correct: 8096
+[44,     1] loss: 0.011, total correct: 16
+[44,   506] loss: 0.011, total correct: 8096
+[45,     1] loss: 0.008, total correct: 16
+[45,   506] loss: 0.011, total correct: 8096
+[46,     1] loss: 0.010, total correct: 16
+[46,   506] loss: 0.010, total correct: 8096
+[47,     1] loss: 0.011, total correct: 16
+[47,   506] loss: 0.010, total correct: 8096
+[48,     1] loss: 0.009, total correct: 16
+[48,   506] loss: 0.010, total correct: 8096
+[49,     1] loss: 0.008, total correct: 16
+[49,   506] loss: 0.010, total correct: 8096
+[50,     1] loss: 0.011, total correct: 16
+[50,   506] loss: 0.009, total correct: 8096
+[51,     1] loss: 0.006, total correct: 16
+[51,   506] loss: 0.009, total correct: 8096
+[52,     1] loss: 0.009, total correct: 16
+[52,   506] loss: 0.009, total correct: 8096
+[53,     1] loss: 0.010, total correct: 16
+[53,   506] loss: 0.009, total correct: 8096
+[54,     1] loss: 0.009, total correct: 16
+[54,   506] loss: 0.009, total correct: 8096
+[55,     1] loss: 0.007, total correct: 16
+[55,   506] loss: 0.008, total correct: 8096
+[56,     1] loss: 0.008, total correct: 16
+[56,   506] loss: 0.008, total correct: 8096
+[57,     1] loss: 0.009, total correct: 16
+[57,   506] loss: 0.008, total correct: 8096
+[58,     1] loss: 0.007, total correct: 16
+[58,   506] loss: 0.008, total correct: 8096
+[59,     1] loss: 0.007, total correct: 16
+[59,   506] loss: 0.008, total correct: 8096
+[60,     1] loss: 0.007, total correct: 16
+[60,   506] loss: 0.008, total correct: 8096
+[61,     1] loss: 0.008, total correct: 16
+[61,   506] loss: 0.008, total correct: 8096
+[62,     1] loss: 0.008, total correct: 16
+[62,   506] loss: 0.007, total correct: 8096
+[63,     1] loss: 0.006, total correct: 16
+[63,   506] loss: 0.007, total correct: 8096
+[64,     1] loss: 0.008, total correct: 16
+[64,   506] loss: 0.007, total correct: 8096
+[65,     1] loss: 0.008, total correct: 16
+[65,   506] loss: 0.007, total correct: 8096
+[66,     1] loss: 0.006, total correct: 16
+[66,   506] loss: 0.007, total correct: 8096
+[67,     1] loss: 0.009, total correct: 16
+[67,   506] loss: 0.007, total correct: 8096
+[68,     1] loss: 0.006, total correct: 16
+[68,   506] loss: 0.007, total correct: 8096
+[69,     1] loss: 0.006, total correct: 16
+[69,   506] loss: 0.006, total correct: 8096
+[70,     1] loss: 0.009, total correct: 16
+[70,   506] loss: 0.006, total correct: 8096
+[71,     1] loss: 0.006, total correct: 16
+[71,   506] loss: 0.006, total correct: 8096
+[72,     1] loss: 0.005, total correct: 16
+[72,   506] loss: 0.006, total correct: 8096
+[73,     1] loss: 0.005, total correct: 16
+[73,   506] loss: 0.006, total correct: 8096
+[74,     1] loss: 0.005, total correct: 16
+[74,   506] loss: 0.006, total correct: 8096
+[75,     1] loss: 0.007, total correct: 16
+[75,   506] loss: 0.006, total correct: 8096
+[76,     1] loss: 0.006, total correct: 16
+[76,   506] loss: 0.006, total correct: 8096
+[77,     1] loss: 0.007, total correct: 16
+[77,   506] loss: 0.006, total correct: 8096
+[78,     1] loss: 0.005, total correct: 16
+[78,   506] loss: 0.006, total correct: 8096
+[79,     1] loss: 0.007, total correct: 16
+[79,   506] loss: 0.006, total correct: 8096
+[80,     1] loss: 0.005, total correct: 16
+[80,   506] loss: 0.005, total correct: 8096
+[81,     1] loss: 0.005, total correct: 16
+[81,   506] loss: 0.005, total correct: 8096
+[82,     1] loss: 0.005, total correct: 16
+[82,   506] loss: 0.005, total correct: 8096
+[83,     1] loss: 0.006, total correct: 16
+[83,   506] loss: 0.005, total correct: 8096
+[84,     1] loss: 0.007, total correct: 16
+[84,   506] loss: 0.005, total correct: 8096
+[85,     1] loss: 0.004, total correct: 16
+[85,   506] loss: 0.005, total correct: 8096
+[86,     1] loss: 0.005, total correct: 16
+[86,   506] loss: 0.005, total correct: 8096
+[87,     1] loss: 0.005, total correct: 16
+[87,   506] loss: 0.005, total correct: 8096
+[88,     1] loss: 0.004, total correct: 16
+[88,   506] loss: 0.005, total correct: 8096
+[89,     1] loss: 0.005, total correct: 16
+[89,   506] loss: 0.005, total correct: 8096
+[90,     1] loss: 0.004, total correct: 16
+[90,   506] loss: 0.005, total correct: 8096
+[91,     1] loss: 0.004, total correct: 16
+[91,   506] loss: 0.005, total correct: 8096
+[92,     1] loss: 0.004, total correct: 16
+[92,   506] loss: 0.005, total correct: 8096
+[93,     1] loss: 0.005, total correct: 16
+[93,   506] loss: 0.005, total correct: 8096
+[94,     1] loss: 0.005, total correct: 16
+[94,   506] loss: 0.005, total correct: 8096
+[95,     1] loss: 0.004, total correct: 16
+[95,   506] loss: 0.004, total correct: 8096
+[96,     1] loss: 0.004, total correct: 16
+[96,   506] loss: 0.004, total correct: 8096
+[97,     1] loss: 0.004, total correct: 16
+[97,   506] loss: 0.004, total correct: 8096
+[98,     1] loss: 0.004, total correct: 16
+[98,   506] loss: 0.004, total correct: 8096
+[99,     1] loss: 0.005, total correct: 16
+[99,   506] loss: 0.004, total correct: 8096
+[100,     1] loss: 0.004, total correct: 16
+[100,   506] loss: 0.004, total correct: 8096
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Loading model...
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Loading model...
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+Loading model...
+Training time: 0m 0s
+True label: [14, 2, 2, 9, 4, 15, 3, 2, 4, 2, 5, 5, 5, 9, 3, 15, 5, 16, 14, 17, 4, 2, 14, 5, 3, 9, 5, 5, 9, 17, 14, 5, 9, 14, 3, 2, 3, 9, 15, 5, 17, 14, 2, 14, 13, 14, 2, 5, 3, 2, 9, 16, 9, 9, 16, 17, 2, 3, 14, 9]
+Pred_label: [9, 2, 2, 9, 9, 2, 9, 2, 9, 2, 2, 2, 9, 9, 4, 9, 2, 9, 9, 2, 9, 2, 9, 2, 9, 9, 2, 2, 9, 9, 9, 2, 9, 9, 9, 2, 9, 9, 2, 2, 9, 9, 2, 9, 9, 9, 2, 2, 9, 2, 9, 9, 9, 9, 9, 9, 2, 9, 9, 2]
+real loss [0.0]
+real accuracy: [0.31666666666666665]
+real f1score: [0.31666666666666665]
+real truth: [tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 1.,  ..., 0., 0., 0.],
+        [0., 0., 1.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.float64)]
+real pred: [tensor([[ -8.6485,  -8.4790,  -3.1008,  ...,  -7.9655, -11.7981,  -6.6850],
+        [ -1.2979, -16.7091,   0.1589,  ..., -14.0173, -15.6859, -10.7831],
+        [ -1.0589, -16.8461,  -0.1537,  ..., -13.7014, -15.7800, -10.7456],
+        ...,
+        [ -9.2710,  -6.0890, -10.4849,  ..., -14.4841, -17.8680, -11.1151],
+        [ -9.8428,  -7.3026,  -7.4398,  ..., -10.4840, -13.3141,  -8.4224],
+        [ -5.5877, -12.7227,   2.5439,  ..., -13.1907, -16.1380, -11.5987]],
+       dtype=torch.float64)]
+training loss []
+validation loss: []
+testing loss: [0.012613849802732165]
+training accuracy: []
+validation accuracy: []
+testing accuracy: [0.9511936339522546]
+training fbeta: []
+validation fbeta: []
+testing fbeta: [0.952540297898388]
+training: 13195 , validation: 16965
+1885
+Training and Testing my model
+1.2.0
+Net(
+  (conv1): Conv2d(4, 128, kernel_size=(2, 2), stride=(2, 2))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (conv2_bn): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=262144, out_features=4096, bias=True)
+  (fc1_bn): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc2): Linear(in_features=4096, out_features=29, bias=True)
+)
+12
+torch.Size([128, 4, 2, 2])
+[1,     1] loss: 0.719, total correct: 0
+[1,   506] loss: 0.287, total correct: 2615

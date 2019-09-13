@@ -1,0 +1,356 @@
+training: 13195 , validation: 16965
+1885
+Training and Testing RESNET
+1.2.0
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=2048, out_features=1, bias=True)
+)
+161
+torch.Size([64, 3, 7, 7])
+Resnet MSE loss, adam optimizer, learning rate = 0.001
+[1,     1] loss: 1.601
+[1,   506] loss: 0.024
+[2,     1] loss: 0.010
+[2,   506] loss: 0.007
+[3,     1] loss: 0.007
+[3,   506] loss: 0.008
+[4,     1] loss: 0.003
+[4,   506] loss: 0.005
+[5,     1] loss: 0.006
+[5,   506] loss: 0.005
+[6,     1] loss: 0.005
+[6,   506] loss: 0.005
+[7,     1] loss: 0.006
+[7,   506] loss: 0.005
+[8,     1] loss: 0.002
+[8,   506] loss: 0.004
+[9,     1] loss: 0.001
+[9,   506] loss: 0.005
+[10,     1] loss: 0.017
+[10,   506] loss: 0.005
+[11,     1] loss: 0.001
+[11,   506] loss: 0.004
+[12,     1] loss: 0.002
+[12,   506] loss: 0.005
+[13,     1] loss: 0.002
+[13,   506] loss: 0.005
+[14,     1] loss: 0.005
+[14,   506] loss: 0.004
+[15,     1] loss: 0.006
+[15,   506] loss: 0.005
+[16,     1] loss: 0.009
+[16,   506] loss: 0.004
+[17,     1] loss: 0.010
+[17,   506] loss: 0.005
+[18,     1] loss: 0.012
+[18,   506] loss: 0.004
+[19,     1] loss: 0.003
+[19,   506] loss: 0.005
+[20,     1] loss: 0.008
+[20,   506] loss: 0.004
+[21,     1] loss: 0.002
+[21,   506] loss: 0.004
+[22,     1] loss: 0.002
+[22,   506] loss: 0.005
+[23,     1] loss: 0.002
+[23,   506] loss: 0.004
+[24,     1] loss: 0.001
+[24,   506] loss: 0.004
+[25,     1] loss: 0.003
+[25,   506] loss: 0.004
+[26,     1] loss: 0.001
+[26,   506] loss: 0.004
+[27,     1] loss: 0.002
+[27,   506] loss: 0.004
+[28,     1] loss: 0.003
+[28,   506] loss: 0.004
+[29,     1] loss: 0.001
+[29,   506] loss: 0.004
+[30,     1] loss: 0.017
+[30,   506] loss: 0.004
+[31,     1] loss: 0.001
+[31,   506] loss: 0.004
+[32,     1] loss: 0.001
+[32,   506] loss: 0.004
+[33,     1] loss: 0.001
+[33,   506] loss: 0.004
+[34,     1] loss: 0.010
+[34,   506] loss: 0.005
+[35,     1] loss: 0.018
+[35,   506] loss: 0.003
+[36,     1] loss: 0.002
+[36,   506] loss: 0.004
+[37,     1] loss: 0.004
+[37,   506] loss: 0.004
+[38,     1] loss: 0.002
+[38,   506] loss: 0.004
+[39,     1] loss: 0.009
+[39,   506] loss: 0.003
+[40,     1] loss: 0.000
+[40,   506] loss: 0.004
+[41,     1] loss: 0.001
+[41,   506] loss: 0.004
+[42,     1] loss: 0.002
+[42,   506] loss: 0.004
+[43,     1] loss: 0.003
+[43,   506] loss: 0.005
+[44,     1] loss: 0.001
+[44,   506] loss: 0.004
+[45,     1] loss: 0.001
+[45,   506] loss: 0.004
+[46,     1] loss: 0.001
+[46,   506] loss: 0.004
+[47,     1] loss: 0.001
+[47,   506] loss: 0.004
+[48,     1] loss: 0.000
+[48,   506] loss: 0.004
+[49,     1] loss: 0.002
+[49,   506] loss: 0.004
+[50,     1] loss: 0.002
+[50,   506] loss: 0.005
+Training time: 1486m 60s
+real y: [array([0.83494102]), array([0.84720061]), array([0.3392247]), array([0.47912786]), array([0.41978961]), array([0.565066]), array([0.83496995]), array([0.84534281]), array([0.32740554]), array([0.47928948]), array([0.41559829]), array([0.56558515]), array([0.83491207]), array([0.84533563]), array([0.33824331]), array([0.47839002]), array([0.41880342]), array([0.5678679]), array([0.83491806]), array([0.840417]), array([0.33755156]), array([0.45983665]), array([0.41978961]), array([0.56213398]), array([0.83496199]), array([0.84401948]), array([0.33829966]), array([0.47933536]), array([0.41978961]), array([0.5678679]), array([0.8345806]), array([0.84532485]), array([0.33793467]), array([0.47900547]), array([0.39423077]), array([0.5678679]), array([0.83496995]), array([0.84626692]), array([0.33500164]), array([0.47831412]), array([0.39497041]), array([0.56725084]), array([0.83494666]), array([0.84031884]), array([0.32867865]), array([0.47899738]), array([0.39521696]), array([0.5678679]), array([0.83494053]), array([0.84527697]), array([0.3365703]), array([0.47872557]), array([0.41510519]), array([0.56558515]), array([0.83492583]), array([0.84833181]), array([0.33720814]), array([0.47879542]), array([0.39201183]), array([0.56211337])]
+real predy: [[0.73599019]
+ [0.84563099]
+ [0.81651878]
+ [0.86814486]
+ [0.75722148]
+ [0.82071067]
+ [0.80779846]
+ [0.87144396]
+ [0.75156243]
+ [0.86296464]
+ [0.74678182]
+ [0.7295098 ]
+ [0.81927561]
+ [0.7711146 ]
+ [0.83330414]
+ [0.81259137]
+ [0.82422626]
+ [0.78308911]
+ [0.78237534]
+ [0.83430687]
+ [0.78730431]
+ [0.81248707]
+ [0.77592476]
+ [0.77523959]
+ [0.81061259]
+ [0.82960975]
+ [0.8299952 ]
+ [0.75689715]
+ [0.82991542]
+ [0.84470214]
+ [0.82305555]
+ [0.80666122]
+ [0.84192127]
+ [0.83592303]
+ [0.73003312]
+ [0.74109081]
+ [0.83176243]
+ [0.87784706]
+ [0.92250746]
+ [0.9162703 ]
+ [0.716631  ]
+ [0.85601215]
+ [0.77763692]
+ [0.81332619]
+ [0.77477496]
+ [0.86443743]
+ [0.78569381]
+ [0.82633639]
+ [0.88849772]
+ [0.89754784]
+ [0.8949473 ]
+ [0.79900857]
+ [0.79661798]
+ [0.79874907]
+ [0.76910709]
+ [0.82210366]
+ [0.81428594]
+ [0.86676374]
+ [0.84751121]
+ [0.83199891]]
+real cor: 0.0950197344367806
+real p: 0.4701880042274722
+training loss [0.017454352916960306, 0.006961996208365965, 0.0071936591741006296, 0.005875413373571371, 0.0054376660967089185, 0.005329422309232701, 0.0047351607959885, 0.004691885964997661, 0.005424422081902813, 0.005093293518577077, 0.004254793183894322, 0.004748998398958936, 0.0044530131529450815, 0.0040666465042513604, 0.004863824535842159, 0.003924748482616018, 0.004868436645744868, 0.004764202571340279, 0.004534521085227871, 0.003793988898621438, 0.004101844955145438, 0.004955367297900166, 0.003753738536660266, 0.004426754165192642, 0.0034823607574033266, 0.00388090912479535, 0.004173038030411397, 0.003979912590560314, 0.003972558378416147, 0.0039083664682296555, 0.004048276754494673, 0.004000130198164032, 0.0036349354167946107, 0.004831191699609242, 0.0037030757178967456, 0.004100457303062668, 0.0034977238241694917, 0.00463274216897842, 0.0036698079965980478, 0.004244243399149932, 0.004381090422442261, 0.0034148381023242635, 0.004661402364315963, 0.0035908139289274944, 0.003999322186897685, 0.004271847833521176, 0.003740969763905499, 0.0039984653424831795, 0.003624404490094843, 0.004569511669173547]
+validation loss: [0.006002870241029589, 0.004574324830512606, 0.0038113679507365762, 0.005669397811576409, 0.0062257517829823845, 0.006464980176068537, 0.0011663311015113415, 0.0012127868939276981, 0.012990376420364326, 0.0010209833317979802, 0.0017035577552395385, 0.001256728103788935, 0.0025404928623487567, 0.01041901146995014, 0.007470516206186722, 0.008357391183327486, 0.008542099321318662, 0.0017996576268329374, 0.004124807737124994, 0.001829061066441407, 0.0015020683832435004, 0.0014971581804664345, 0.0019732242199201186, 0.002885950257003411, 0.0009114194383039282, 0.0013663526749764132, 0.003621301120897409, 0.0008608639741034458, 0.017383323072772357, 0.001286400425515231, 0.0008002868948945979, 0.0008486764279596727, 0.010259882645101593, 0.013685519336290296, 0.005142026000272455, 0.003695025049045517, 0.005270086990932925, 0.008450007681144617, 0.0011732198731266167, 0.001576845429962696, 0.0025976504765772256, 0.001231569514893897, 0.002031954429168985, 0.0008400224161187307, 0.001035671936704064, 0.0007720245518084625, 0.0014309932314255896, 0.0013007983817820167, 0.0038819076464086657, 0.002442346055717028]
+testing loss: [0.7886298143983773]
+training cor: [0.00336854367776538, -0.013147411972992334, 0.006255213764873821, 0.008181052716995697, -0.012925146902939064, -0.017314445774532044, 0.012742722999580878, -0.0037546191628674724, 0.008695302831802115, -0.00695522189570171, -0.009239450479889031, 0.0015966169698855704, 0.018332042590632383, 0.0165301201462684, 0.01069544137902941, -0.0034678535457670664, -0.007422886178713572, 0.0044528840823362175, -0.009484713947660532, -0.0019697597916028407, -0.013335502633807195, -0.014399268275977446, 0.006462976137635208, 0.016415823850781445, 0.010979959121871628, 0.004608560131038476, -0.00612530327233163, 0.013419761350909741, 0.009295574509441337, 0.005873921090839796, 0.0045753268837283485, -0.012970907701907721, -0.0012495819683031638, 0.006306849723586274, -0.00891726334705396, 0.003928270086472706, -0.0025996498736570034, 0.010187027672468502, 0.007563743791881498, 0.0014294584661376127, 0.0017425253238720323, -0.025157896616649255, -0.005045707003088528, 0.0029061353429634955, -0.0022843381171232463, -0.0018422194806127635, -0.013972692250482869, 0.008731969677639702, -0.0024376988356425077, 0.005877137496545439]
+validation cor: [0.021762602216604143, 0.0011706170235510896, 0.014402538933025753, -0.004189528064976094, 0.013773830873149321, 0.018081051019972327, -0.025925258230471124, -0.01762544620793914, 0.03282711351091644, 0.006058644699551737, -0.0053682748805410335, -0.022503883675062005, 0.006525350651016769, -0.014806831132195651, 0.01602076907721687, 0.008181851803713508, -0.02589651840486834, 0.011606009316237297, -0.029013010919261523, 0.0034754069552734696, 0.013638175742278656, -0.01046791694892524, -0.007398130109252286, 0.0012407724748749098, -0.006246934871532672, 0.000249403112752352, 0.016080490035414088, -0.005588366276555758, -0.03339954831195187, -0.020191183702678413, 0.007785608081836758, 0.025159567571308404, -0.01883092518193254, 0.012705923862161673, 0.011889605157040519, -0.007534137603912653, 0.022517152535023385, -0.0031622986870170617, -0.011432299904112464, -0.00023556997791095746, 0.003068537101858108, -0.02925106760437495, 0.004396676531934724, -0.017254823791322933, 0.011411669485841483, -0.015569304035695829, -0.005766568495004924, -0.02143346968419358, -0.0019985729180397294, 0.002078338738915888]
+testing cor: [nan]
+training p: [0.6988248085014331, 0.13100293131640395, 0.47246619614793517, 0.34738169779990935, 0.13764281808269796, 0.04671641197959453, 0.1432839023395683, 0.6662852542685461, 0.31791616884883667, 0.4243618686657633, 0.288574903630039, 0.8544956928785106, 0.03522434945385319, 0.057596522676931126, 0.21925983542170752, 0.6903987189086788, 0.39388442216412656, 0.6090327666797344, 0.27596626914369976, 0.8210115816031033, 0.12558034097492551, 0.09813449017322844, 0.4578836643259442, 0.05934540700238414, 0.2072436991978237, 0.5965726530120599, 0.48171280218061163, 0.12320863518497494, 0.28565593921813415, 0.4998814933031066, 0.5992228442305818, 0.13625498045643528, 0.885875329643077, 0.46881824282702456, 0.3057196518718706, 0.65184729946577, 0.7652508572007949, 0.2419614592096431, 0.3849710221425805, 0.8695849623448986, 0.841367816684428, 0.003851702816633412, 0.5622204293604844, 0.7385339795760205, 0.7930313886263916, 0.8324230524678664, 0.10850209405389141, 0.3158796749291181, 0.779484323247021, 0.49964675242313206]
+validation p: [0.18156693884170116, 0.9427193269075925, 0.3766567113284591, 0.7970597291157465, 0.39784437208274803, 0.2670399687795696, 0.11148384762739867, 0.2792821676872145, 0.0438554033473418, 0.709980105147132, 0.7417725830416843, 0.16713679700776982, 0.6887661515819745, 0.36340682590807627, 0.32540207737298765, 0.6155196843317542, 0.11188125189537736, 0.4762168490719728, 0.07488100678490901, 0.8310765953032054, 0.4025084425251192, 0.5205239421065662, 0.6497545669504898, 0.9392929196541724, 0.7013932671722222, 0.9877861773960772, 0.3236015965022143, 0.7315861213374873, 0.04030248847391584, 0.21517501478989232, 0.6327302151387058, 0.12245809218506835, 0.24770406104258108, 0.43543759191549514, 0.46550673749489, 0.643757459566731, 0.16688658463796344, 0.8460958072083251, 0.4828431368832128, 0.9884635680591112, 0.8506045329687886, 0.07252414649888698, 0.7872609190138773, 0.2895181230166579, 0.48363341364302825, 0.3392231910519351, 0.7233728236586745, 0.18826241806031613, 0.9023664751385163, 0.8984904642319642]
+testing p: [nan]

@@ -1,0 +1,409 @@
+training: 13195 , validation: 16965
+1885
+Training and Testing RESNET
+1.2.0
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=2048, out_features=29, bias=True)
+)
+161
+torch.Size([64, 3, 7, 7])
+[1,     1] loss: 0.735, total correct: 0
+[1,   506] loss: 0.361, total correct: 402
+[2,     1] loss: 0.181, total correct: 1
+[2,   506] loss: 0.170, total correct: 502
+[3,     1] loss: 0.158, total correct: 1
+[3,   506] loss: 0.154, total correct: 659
+[4,     1] loss: 0.151, total correct: 1
+[4,   506] loss: 0.150, total correct: 885
+[5,     1] loss: 0.149, total correct: 2
+[5,   506] loss: 0.147, total correct: 1073
+[6,     1] loss: 0.145, total correct: 4
+[6,   506] loss: 0.146, total correct: 1363
+[7,     1] loss: 0.146, total correct: 3
+[7,   506] loss: 0.145, total correct: 1552
+[8,     1] loss: 0.143, total correct: 3
+[8,   506] loss: 0.144, total correct: 1715
+[9,     1] loss: 0.146, total correct: 3
+[9,   506] loss: 0.143, total correct: 1901
+[10,     1] loss: 0.143, total correct: 3
+[10,   506] loss: 0.142, total correct: 2066
+[11,     1] loss: 0.134, total correct: 10
+[11,   506] loss: 0.141, total correct: 2194
+[12,     1] loss: 0.138, total correct: 5
+[12,   506] loss: 0.140, total correct: 2273
+[13,     1] loss: 0.142, total correct: 3
+[13,   506] loss: 0.140, total correct: 2405
+[14,     1] loss: 0.138, total correct: 4
+[14,   506] loss: 0.139, total correct: 2504
+[15,     1] loss: 0.140, total correct: 2
+[15,   506] loss: 0.138, total correct: 2665
+[16,     1] loss: 0.139, total correct: 2
+[16,   506] loss: 0.137, total correct: 2794
+[17,     1] loss: 0.136, total correct: 3
+[17,   506] loss: 0.136, total correct: 2803
+[18,     1] loss: 0.134, total correct: 4
+[18,   506] loss: 0.135, total correct: 2863
+[19,     1] loss: 0.142, total correct: 2
+[19,   506] loss: 0.135, total correct: 2961
+[20,     1] loss: 0.130, total correct: 8
+[20,   506] loss: 0.134, total correct: 3084
+[21,     1] loss: 0.133, total correct: 5
+[21,   506] loss: 0.133, total correct: 3070
+[22,     1] loss: 0.134, total correct: 5
+[22,   506] loss: 0.132, total correct: 3091
+[23,     1] loss: 0.127, total correct: 7
+[23,   506] loss: 0.132, total correct: 3246
+[24,     1] loss: 0.137, total correct: 5
+[24,   506] loss: 0.131, total correct: 3233
+[25,     1] loss: 0.131, total correct: 7
+[25,   506] loss: 0.130, total correct: 3404
+[26,     1] loss: 0.128, total correct: 10
+[26,   506] loss: 0.130, total correct: 3365
+[27,     1] loss: 0.127, total correct: 5
+[27,   506] loss: 0.129, total correct: 3385
+[28,     1] loss: 0.126, total correct: 8
+[28,   506] loss: 0.128, total correct: 3529
+[29,     1] loss: 0.133, total correct: 2
+[29,   506] loss: 0.128, total correct: 3628
+[30,     1] loss: 0.131, total correct: 3
+[30,   506] loss: 0.127, total correct: 3490
+[31,     1] loss: 0.123, total correct: 6
+[31,   506] loss: 0.127, total correct: 3655
+[32,     1] loss: 0.123, total correct: 11
+[32,   506] loss: 0.126, total correct: 3733
+[33,     1] loss: 0.134, total correct: 4
+[33,   506] loss: 0.125, total correct: 3758
+[34,     1] loss: 0.121, total correct: 10
+[34,   506] loss: 0.125, total correct: 3728
+[35,     1] loss: 0.126, total correct: 5
+[35,   506] loss: 0.124, total correct: 3832
+[36,     1] loss: 0.127, total correct: 6
+[36,   506] loss: 0.124, total correct: 3882
+[37,     1] loss: 0.124, total correct: 7
+[37,   506] loss: 0.123, total correct: 3834
+[38,     1] loss: 0.119, total correct: 10
+[38,   506] loss: 0.123, total correct: 3892
+[39,     1] loss: 0.121, total correct: 7
+[39,   506] loss: 0.122, total correct: 3862
+[40,     1] loss: 0.119, total correct: 8
+[40,   506] loss: 0.122, total correct: 3960
+[41,     1] loss: 0.122, total correct: 9
+[41,   506] loss: 0.121, total correct: 3963
+[42,     1] loss: 0.127, total correct: 6
+[42,   506] loss: 0.121, total correct: 3992
+[43,     1] loss: 0.118, total correct: 9
+[43,   506] loss: 0.120, total correct: 3975
+[44,     1] loss: 0.125, total correct: 7
+[44,   506] loss: 0.120, total correct: 4001
+[45,     1] loss: 0.117, total correct: 7
+[45,   506] loss: 0.119, total correct: 4080
+[46,     1] loss: 0.120, total correct: 7
+[46,   506] loss: 0.119, total correct: 4138
+[47,     1] loss: 0.114, total correct: 10
+[47,   506] loss: 0.118, total correct: 4096
+[48,     1] loss: 0.118, total correct: 9
+[48,   506] loss: 0.118, total correct: 4176
+[49,     1] loss: 0.118, total correct: 11
+[49,   506] loss: 0.118, total correct: 4134
+[50,     1] loss: 0.129, total correct: 1
+[50,   506] loss: 0.117, total correct: 4167
+[51,     1] loss: 0.120, total correct: 7
+[51,   506] loss: 0.116, total correct: 4195
+[52,     1] loss: 0.118, total correct: 10
+[52,   506] loss: 0.116, total correct: 4243
+[53,     1] loss: 0.111, total correct: 10
+[53,   506] loss: 0.116, total correct: 4218
+[54,     1] loss: 0.118, total correct: 9
+[54,   506] loss: 0.115, total correct: 4282
+[55,     1] loss: 0.119, total correct: 8
+[55,   506] loss: 0.115, total correct: 4295
+[56,     1] loss: 0.122, total correct: 6
+[56,   506] loss: 0.115, total correct: 4266
+[57,     1] loss: 0.111, total correct: 9
+[57,   506] loss: 0.114, total correct: 4350
+[58,     1] loss: 0.117, total correct: 9
+[58,   506] loss: 0.114, total correct: 4364
+[59,     1] loss: 0.111, total correct: 9
+[59,   506] loss: 0.113, total correct: 4346
+[60,     1] loss: 0.111, total correct: 8
+[60,   506] loss: 0.113, total correct: 4368
+[61,     1] loss: 0.116, total correct: 8
+[61,   506] loss: 0.113, total correct: 4372
+[62,     1] loss: 0.117, total correct: 6
+[62,   506] loss: 0.112, total correct: 4420
+[63,     1] loss: 0.107, total correct: 12
+[63,   506] loss: 0.112, total correct: 4327
+[64,     1] loss: 0.109, total correct: 11
+[64,   506] loss: 0.111, total correct: 4398
+[65,     1] loss: 0.111, total correct: 10
+[65,   506] loss: 0.111, total correct: 4469
+[66,     1] loss: 0.121, total correct: 7
+[66,   506] loss: 0.111, total correct: 4458
+[67,     1] loss: 0.104, total correct: 12
+[67,   506] loss: 0.111, total correct: 4436
+[68,     1] loss: 0.123, total correct: 5
+[68,   506] loss: 0.110, total correct: 4455
+[69,     1] loss: 0.110, total correct: 11
+[69,   506] loss: 0.110, total correct: 4491
+[70,     1] loss: 0.118, total correct: 8
+[70,   506] loss: 0.109, total correct: 4513
+[71,     1] loss: 0.126, total correct: 5
+[71,   506] loss: 0.109, total correct: 4503
+[72,     1] loss: 0.102, total correct: 8
+[72,   506] loss: 0.109, total correct: 4541
+[73,     1] loss: 0.115, total correct: 6
+[73,   506] loss: 0.109, total correct: 4528
+[74,     1] loss: 0.102, total correct: 10
+[74,   506] loss: 0.108, total correct: 4568
+[75,     1] loss: 0.110, total correct: 9
+[75,   506] loss: 0.108, total correct: 4552
+[76,     1] loss: 0.119, total correct: 4
+[76,   506] loss: 0.108, total correct: 4572
+[77,     1] loss: 0.110, total correct: 7
+[77,   506] loss: 0.107, total correct: 4602
+[78,     1] loss: 0.109, total correct: 13
+[78,   506] loss: 0.107, total correct: 4605
+[79,     1] loss: 0.109, total correct: 10
+[79,   506] loss: 0.107, total correct: 4650
+[80,     1] loss: 0.108, total correct: 9
+[80,   506] loss: 0.106, total correct: 4599
+[81,     1] loss: 0.106, total correct: 8
+[81,   506] loss: 0.106, total correct: 4641
+[82,     1] loss: 0.101, total correct: 9
+[82,   506] loss: 0.106, total correct: 4617
+[83,     1] loss: 0.101, total correct: 11
+[83,   506] loss: 0.106, total correct: 4673
+[84,     1] loss: 0.106, total correct: 9
+[84,   506] loss: 0.105, total correct: 4636
+[85,     1] loss: 0.105, total correct: 10
+[85,   506] loss: 0.105, total correct: 4729
+[86,     1] loss: 0.101, total correct: 9
+[86,   506] loss: 0.105, total correct: 4663
+[87,     1] loss: 0.104, total correct: 9
+[87,   506] loss: 0.104, total correct: 4756
+[88,     1] loss: 0.097, total correct: 9
+[88,   506] loss: 0.104, total correct: 4731
+[89,     1] loss: 0.103, total correct: 11
+[89,   506] loss: 0.104, total correct: 4662
+[90,     1] loss: 0.108, total correct: 8
+[90,   506] loss: 0.104, total correct: 4683
+[91,     1] loss: 0.102, total correct: 7
+[91,   506] loss: 0.104, total correct: 4699
+[92,     1] loss: 0.108, total correct: 5
+[92,   506] loss: 0.103, total correct: 4682
+[93,     1] loss: 0.108, total correct: 9
+[93,   506] loss: 0.103, total correct: 4755
+[94,     1] loss: 0.102, total correct: 9
+[94,   506] loss: 0.103, total correct: 4789
+[95,     1] loss: 0.095, total correct: 12
+[95,   506] loss: 0.103, total correct: 4745
+[96,     1] loss: 0.117, total correct: 6
+[96,   506] loss: 0.103, total correct: 4758
+[97,     1] loss: 0.101, total correct: 11
+[97,   506] loss: 0.102, total correct: 4783
+[98,     1] loss: 0.106, total correct: 7
+[98,   506] loss: 0.102, total correct: 4759
+[99,     1] loss: 0.093, total correct: 13
+[99,   506] loss: 0.102, total correct: 4778
+[100,     1] loss: 0.104, total correct: 10
+[100,   506] loss: 0.102, total correct: 4772
+Training time: 2931m 14s
+True label: [2, 3, 2, 2, 3, 5, 5, 4, 5, 15, 9, 15, 14, 9, 16, 13, 14, 2, 5, 2, 14, 3, 5, 14, 2, 14, 9, 17, 2, 14, 3, 9, 14, 4, 5, 16, 4, 16, 14, 9, 5, 9, 9, 2, 2, 15, 9, 3, 9, 5, 17, 5, 14, 17, 3, 9, 17, 3, 2, 5]
+Pred_label: [2, 2, 2, 2, 2, 9, 9, 2, 9, 9, 9, 9, 9, 2, 9, 9, 9, 2, 9, 2, 9, 2, 9, 9, 9, 17, 9, 9, 2, 9, 2, 9, 9, 2, 9, 9, 2, 9, 9, 17, 9, 2, 2, 2, 2, 9, 2, 2, 2, 9, 9, 9, 9, 2, 2, 17, 9, 2, 2, 9]
+real loss [0.0]
+real accuracy: [0.2]
+real f1score: [0.053333333333333344]
+real truth: [tensor([[0., 0., 1.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 1.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 1.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.float64)]
+real pred: [tensor([[-3.6492, -3.9925, -1.6267,  ..., -4.7464, -3.3846, -4.2133],
+        [-4.5988, -4.7156, -1.3517,  ..., -5.5453, -4.9713, -5.7370],
+        [-3.1475, -3.4427, -1.5388,  ..., -4.3746, -3.1724, -4.3890],
+        ...,
+        [-3.7683, -4.0674, -1.0694,  ..., -4.5353, -4.1061, -4.8125],
+        [-2.6858, -2.4468, -1.5064,  ..., -4.2353, -3.2750, -3.9209],
+        [-3.4724, -3.7108, -2.4632,  ..., -4.6120, -3.5656, -4.5196]],
+       dtype=torch.float64)]
+training loss [0.2978986264537358, 0.16592995366479146, 0.15312106102010725, 0.14920474511830903, 0.1472395583594468, 0.14591088541768066, 0.14482202720012916, 0.14383658732092058, 0.142855927270405, 0.14195531110599058, 0.14107734153502047, 0.14022205351059322, 0.1393106003843236, 0.13850390646104035, 0.13767757817520454, 0.13681587373500056, 0.1361095678746853, 0.1352435145512201, 0.13452939197290936, 0.13379142662872714, 0.13309820443323633, 0.13238876951555378, 0.13161203439487446, 0.13104845866069612, 0.13027777383246833, 0.12970226034781004, 0.12889758452913558, 0.12835951643253155, 0.12772173098556053, 0.12703655231669136, 0.1264821853430086, 0.12580802048294604, 0.12536600516549967, 0.12484746886609305, 0.12418334561078644, 0.12372650722828764, 0.12316422995339696, 0.1226055712951323, 0.1220627881402451, 0.12156064790443617, 0.12103624201777231, 0.12048681989854118, 0.12004291889586635, 0.11965120841527402, 0.11922762389838985, 0.11868757718991521, 0.11822664647679713, 0.11784011889665838, 0.11727841925669594, 0.11695168932656695, 0.11652557982690258, 0.11602479593347256, 0.11567810784264089, 0.11533580799315755, 0.11483985442389104, 0.11444871820635896, 0.11409453687820913, 0.11376063646341648, 0.11328905790150863, 0.11288098097267156, 0.11255909680512757, 0.11225384317250658, 0.1118330336197866, 0.11144349222392182, 0.11115028297183825, 0.11071236814435562, 0.11052373416526816, 0.11014285163224086, 0.10971354185559117, 0.10961415703668564, 0.10909963193302036, 0.10891698634158348, 0.10848449487953803, 0.10816091049011373, 0.10795333342607384, 0.10755421729060721, 0.10735797911684929, 0.10711004785239128, 0.10686729040808819, 0.10657736260052045, 0.10631798486614817, 0.10599885629914894, 0.10564809599322952, 0.10544653229482871, 0.10503254602222355, 0.10504641737263803, 0.10453743951923493, 0.10440489322736286, 0.1042867900874454, 0.10400300820594159, 0.103755288202534, 0.10337293729523338, 0.10316488504978168, 0.10290913078059999, 0.10277881693799905, 0.1025090921660704, 0.1021413170362319, 0.10196363414277873, 0.10164879419521772, 0.10150331876249821]
+validation loss: [0.18333800744216558, 0.15794663461866246, 0.15103415881743254, 0.148370846484886, 0.14675991344506165, 0.14542325965806455, 0.14430263314943584, 0.14322495925805206, 0.14235177249244158, 0.14134482386992814, 0.14035300824595082, 0.13950009985387696, 0.13852978387095324, 0.13771796190704422, 0.13702839169001657, 0.1358874246216211, 0.13549175583353998, 0.13405964041751212, 0.1333149506183509, 0.13253868749696093, 0.13192495573246943, 0.13156854182042765, 0.13086560330001873, 0.12969567211822092, 0.12876709085264113, 0.1280671254869562, 0.1274324103096417, 0.12672818251335846, 0.12613609112898486, 0.12525994363566195, 0.12486978517056774, 0.12463656971975069, 0.12383578742482941, 0.12269341770621314, 0.12235214220691266, 0.12191480554829048, 0.1212708055011554, 0.12088776008496509, 0.12054495450291419, 0.11964553177016282, 0.11878592000275935, 0.11838526826205975, 0.11825707071290632, 0.11764031248381769, 0.11726243180473628, 0.11633245286877683, 0.1161602564013981, 0.11575274928243247, 0.11526945126661596, 0.11462597173683706, 0.11444700138968193, 0.11414464960251944, 0.11333932872176766, 0.11287390848289997, 0.11273382792306398, 0.11256952811973427, 0.11149421231829608, 0.11150296983244357, 0.11126625309471345, 0.11047459064545617, 0.11070804391266544, 0.10952785156163398, 0.10960457543257325, 0.10912981555578977, 0.10900092054012903, 0.1080389952842013, 0.10778266940170544, 0.1071510122101347, 0.10706566267730681, 0.10715326387261713, 0.10619609584631248, 0.10642331953853533, 0.10590533126530982, 0.10563270992980485, 0.10551289440702005, 0.10512582063880058, 0.10477747248605017, 0.10431298472358917, 0.10398017930702991, 0.10444980861540919, 0.1028030984830823, 0.10365444735873458, 0.1034434773534333, 0.10269439541700685, 0.10239754904240561, 0.10226066248982936, 0.10172073887134385, 0.1012819278630824, 0.10078832167695627, 0.10105356205851551, 0.10066269882253892, 0.10026554130272125, 0.09998566886868389, 0.10045517175385553, 0.10011341749940189, 0.09953710433608182, 0.09940113261406311, 0.09861686564208459, 0.0985451948921813, 0.09826928298015775]
+testing loss: [0.09782368137694353]
+training accuracy: [0.05274725274725275, 0.06714664645699128, 0.08844259189086776, 0.11496779082985979, 0.14081091322470632, 0.17097385373247442, 0.19431602879878743, 0.2182644941265631, 0.23705949223190603, 0.25229253505115573, 0.2748768472906404, 0.2863205759757484, 0.3041303524062145, 0.3095869647593786, 0.32679045092838194, 0.3408109132247063, 0.34831375521030694, 0.3572565365668814, 0.367942402425161, 0.3781735505873437, 0.3812807881773399, 0.388101553618795, 0.3983327017809776, 0.40015157256536565, 0.4135657446002274, 0.42031072375899964, 0.4214475179992421, 0.43349753694581283, 0.44130352406214474, 0.44312239484653276, 0.44744221295945436, 0.45676392572944297, 0.45615763546798027, 0.4633573323228496, 0.4689655172413793, 0.47275483137552105, 0.47146646456991287, 0.47828723001136797, 0.48071239105721864, 0.48669950738916257, 0.4913224706328155, 0.4935960591133005, 0.494278135657446, 0.49541492989768854, 0.5049640015157256, 0.506176582038651, 0.5089806744979158, 0.5125426297840091, 0.5126184160666919, 0.5120121258052293, 0.518075028419856, 0.5222432739674119, 0.5204244031830239, 0.5268662372110648, 0.5303524062144752, 0.53315649867374, 0.5344448654793482, 0.5336112163698371, 0.5348995831754453, 0.5417203486169003, 0.5401288366805608, 0.5465706707086018, 0.5421750663129974, 0.5464190981432361, 0.5502841985600606, 0.5457370215990905, 0.5536945812807882, 0.5522546419098143, 0.5575596816976127, 0.5543766578249337, 0.5616521409624858, 0.5608942781356574, 0.562940507768094, 0.5660477453580902, 0.5594543387646836, 0.5664266767715044, 0.5648351648351648, 0.5671087533156499, 0.5702917771883289, 0.5693823417961349, 0.5735505873436908, 0.5724137931034483, 0.5809776430466086, 0.572565365668814, 0.5811292156119743, 0.5706707086017431, 0.5838575217885563, 0.5779461917392952, 0.5768093974990527, 0.578476695718075, 0.5814323607427055, 0.583478590375142, 0.5856763925729443, 0.5856763925729443, 0.5842364532019705, 0.5864342553997727, 0.5869647593785525, 0.5869647593785525, 0.5918908677529368, 0.5883289124668435]
+validation accuracy: [0.06153846153846154, 0.08275862068965517, 0.11671087533156499, 0.14482758620689656, 0.17320954907161804, 0.20185676392572943, 0.2259946949602122, 0.23713527851458885, 0.2554376657824934, 0.2864721485411141, 0.3053050397877984, 0.3159151193633952, 0.32891246684350134, 0.33978779840848805, 0.34641909814323607, 0.3559681697612732, 0.3612732095490716, 0.3814323607427056, 0.3885941644562334, 0.40371352785145886, 0.3970822281167109, 0.40079575596816974, 0.41273209549071616, 0.4193633952254642, 0.42679045092838197, 0.43342175066313, 0.44084880636604773, 0.44376657824933685, 0.45649867374005304, 0.46021220159151194, 0.45755968169761274, 0.453315649867374, 0.46578249336870026, 0.4793103448275862, 0.4862068965517241, 0.48514588859416446, 0.48938992042440316, 0.4997347480106101, 0.4816976127320955, 0.48594164456233424, 0.5053050397877984, 0.5074270557029178, 0.5053050397877984, 0.5159151193633952, 0.5050397877984085, 0.5145888594164456, 0.5114058355437666, 0.5042440318302387, 0.5283819628647215, 0.5259946949602122, 0.5323607427055703, 0.5196286472148541, 0.5347480106100796, 0.536604774535809, 0.5328912466843502, 0.5302387267904509, 0.5419098143236074, 0.546684350132626, 0.5419098143236074, 0.5413793103448276, 0.5453580901856764, 0.5551724137931034, 0.5469496021220159, 0.5525198938992042, 0.5538461538461539, 0.5610079575596817, 0.5628647214854111, 0.5694960212201592, 0.5660477453580902, 0.5641909814323608, 0.5724137931034483, 0.5668435013262599, 0.5785145888594164, 0.5726790450928382, 0.5753315649867374, 0.5748010610079576, 0.5761273209549072, 0.5570291777188329, 0.573209549071618, 0.5631299734748011, 0.583554376657825, 0.5753315649867374, 0.5787798408488064, 0.5843501326259947, 0.5822281167108754, 0.5848806366047745, 0.5843501326259947, 0.5928381962864722, 0.596816976127321, 0.5920424403183023, 0.5891246684350132, 0.5986737400530504, 0.5949602122015916, 0.5779840848806366, 0.5867374005305039, 0.5978779840848807, 0.5864721485411141, 0.5992042440318303, 0.5925729442970822, 0.6023872679045092]
+testing accuracy: [0.6106100795755968]
