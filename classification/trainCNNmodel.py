@@ -162,6 +162,7 @@ class Net(nn.Module):
         self.conv2 = nn.Conv2d(in_channels = 128, out_channels = 256, kernel_size = 4, stride = 2, padding = 1)
         #in size: 128, out size: 32
         self.conv2_bn = nn.BatchNorm2d(256)
+        self.drop_out = nn.Dropout(0.2)
         self.fc1 = nn.Linear(256 * 32 * 32, 4096)
         self.fc1_bn = nn.BatchNorm1d(4096)
         self.fc2 = nn.Linear(4096, numberofclasses)
@@ -169,6 +170,7 @@ class Net(nn.Module):
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
         x = F.relu(self.conv2_bn(self.conv2(x)))
+        x = self.drop_out(out)
         x = x.view(-1, 256 * 32 * 32)
         x = F.relu(self.fc1_bn(self.fc1(x)))
         x = self.fc2(x)
