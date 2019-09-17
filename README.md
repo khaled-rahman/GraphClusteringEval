@@ -1,5 +1,5 @@
 # Evaluating The Community Structures From The Images Of Networks Using Deep Learning #
-The source code for evaluating the community structures from the images of networks using deep learning. Please follow the instructions to generate training images, run CNN model, and get plots. Our generated datasets can be found [here](http://).
+The source code for evaluating the community structures from the images of networks using deep learning. Please follow the instructions to generate training images, run CNN model, and get plots. Our generated datasets can be found [here](https://drive.google.com/drive/folders/1B_pLKlsbSqzkyDgnbwMms9cGOZD4JDIk?usp=sharing).
 
 ## Required Software packages/tools ##
 User needs to  make sure that your machine has following version/packages installed:
