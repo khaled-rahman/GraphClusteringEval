@@ -138,15 +138,15 @@ numberofclasses = 29
 input_size = 256
 simulatedimagedirector=currentdir+"/datasetgen/dataset/"
 realimagedirectory=currentdir+"/datasetgen/realimages/"
-trainingSet = MyDatasetLoader(training_X, training_Y, simulatedimagedirector, regression, 
+trainingSet = MyDatasetLoader(training_X, training_Y, str(simulatedimagedirector), regression, 
                                                                           transform=transforms.Compose([Rescale(input_size),
                                                                                                     ToTensor()]))
-validationset = MyDatasetLoader(validation_X, validation_Y, simulatedimagedirector, regression, transform=transforms.Compose([Rescale(input_size), ToTensor()]))                                                                              
-testingSet = MyDatasetLoader(testing_X, testing_Y, simulatedimagedirector, regression, 
+validationset = MyDatasetLoader(validation_X, validation_Y, str(simulatedimagedirector), regression, transform=transforms.Compose([Rescale(input_size), ToTensor()]))                                                                              
+testingSet = MyDatasetLoader(testing_X, testing_Y, str(simulatedimagedirector), regression, 
                                                                          transform=transforms.Compose([Rescale(input_size),
                                                                                                     #RandomCrop(224),
                                                                                                    ToTensor()]))
-realset = MyDatasetLoader(real_X, real_Y, realimagedirectory, regression, transform=transforms.Compose([Rescale(input_size), ToTensor()])) 
+realset = MyDatasetLoader(real_X, real_Y, str(realimagedirectory), regression, transform=transforms.Compose([Rescale(input_size), ToTensor()])) 
 training_loader = DataLoader(trainingSet, batch_size=batch, shuffle=True, num_workers=0)
 validation_loader = DataLoader(validationset, batch_size=batch, shuffle=True, num_workers=0)
 testing_loader = DataLoader(testingSet, batch_size=batch, shuffle=True, num_workers=0)
@@ -170,7 +170,7 @@ class Net(nn.Module):
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
         x = F.relu(self.conv2_bn(self.conv2(x)))
-        x = self.drop_out(out)
+        x = self.drop_out(x)
         x = x.view(-1, 256 * 32 * 32)
         x = F.relu(self.fc1_bn(self.fc1(x)))
         x = self.fc2(x)
