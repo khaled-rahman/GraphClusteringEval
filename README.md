@@ -37,5 +37,12 @@ This will read data from datasetgen folder, train and test the models, and gener
 ## Results ##
 Our results, log files are available in results directory. User can check out this also.
 
+## Citation ##
+If you find this repository helpful, please cite the following paper:
+```
+Md. Khaledur Rahman and Ariful Azad, "Evaluating the Community Structures from Network Images using Neural Networks", In the 8th Proceedings of International Conference on Complex Networks and their Applications (Complex Networks 2019), December, 2019, Lisbon, Portugal.
+```
+
+
 ### Contact ##
 If you have any question or comments, please do not hesitate to send me (Md. Khaledur Rahman) an email at `morahma@iu.edu`.
