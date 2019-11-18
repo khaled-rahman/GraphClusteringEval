@@ -235,8 +235,7 @@ def SpearmanCor(y_true, y_pred):
     print("y_true:", y_true)
     print("y_pred:", y_pred)
     for row in y_true:
-        row = list(row)
-        y_t.append(row[0])
+        y_t.append(row)
     for row in y_pred:
         row = list(row)
         y_p.append(row[0])
