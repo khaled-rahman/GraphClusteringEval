@@ -41,6 +41,17 @@ Our results, log files are available in results directory. User can check out th
 If you find this repository helpful, please cite the following paper:
 
 Md. Khaledur Rahman and Ariful Azad, "Evaluating the Community Structures from Network Images using Neural Networks", In the 8th Proceedings of International Conference on Complex Networks and their Applications (Complex Networks 2019), December, 2019, Lisbon, Portugal.
+```
+@inproceedings{rahman2019evaluating,
+  title={Evaluating the Community Structures from Network Images Using Neural Networks},
+  author={Rahman, Md Khaledur and Azad, Ariful},
+  booktitle={International Conference on Complex Networks and Their Applications},
+  pages={866--878},
+  year={2019},
+  organization={Springer}
+}
+
+```
 
 
 ### Contact ##
